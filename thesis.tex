@@ -1,0 +1,62 @@
+%!TEX program = xelatex
+
+\immediate\write18{makeindex -s nomencl.ist -o "\jobname.nls" "\jobname.nlo"}
+
+\documentclass{Classes/UITBA}
+%\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+
+\usepackage{algorithm} 
+\usepackage{tabularx}  
+\usepackage{cuted}  
+\usepackage[utf8]{inputenc}
+\usepackage{libertine}
+\usepackage[algo2e]{algorithm2e}
+\usepackage{graphicx}
+\newtheorem{mydef}{Definition}
+
+%\include{Preamble/Premable}
+% \selectlanguage{vietnamese}
+\begin{document}
+
+
+%\begin{otherlanguage}{vietnamese} %Uncomment this line and its corresponding ending line if \selectlanguage{english}
+
+\pagestyle{empty}
+\newgeometry{left=3cm,right=3cm,top=3cm,bottom=3cm}
+%\include{Cover/Cover}
+\clearpage
+\restoregeometry
+
+%\include{TheBoard/TheBoard}
+%\include{Acknowledgement/Acknowledgement}
+%\include{Comment/Comment}
+%\end{otherlanguage}
+
+\pagestyle{empty}
+\tableofcontents
+%\listoffigures
+%\listoftables
+%\renewcommand{\nomname}{\IfLanguageName{vietnamese}{Danh sách các từ viết tắt}{Abbreviations}}
+%\printnomenclature[2cm]
+ 
+\clearpage
+\pagestyle{plain}
+\setcounter{page}{1}
+
+
+\newgeometry{left=2.5cm,right=2cm,top=2cm,bottom=2.5cm}
+
+\include{Abstract/Abstract}
+\include{Acknowledgement/Acknowledgement}
+\include{Chapter1/Chapter1}
+\include{Chapter2/Chapter2}
+\include{Chapter3/Chapter3}
+\include{Chapter4/Chapter4}
+\include{Chapter5/Chapter5}
+
+
+\include{Reference/Reference}
+%\printbibliography
+
+\end{document}
