@@ -21,12 +21,12 @@
 
  % Setup Times New Roman
  \usepackage{fontspec}
- \setmainfont{Times New Roman}
+%  \setmainfont{Times New Roman}
 %% Setup uppercase Times New Roman for a whole page
-\setmainfont{Times New Roman}
-\newfontfamily{\uctimes}{Times New Roman}[
-  Mapping=uc-text
-]
+% \setmainfont{Times New Roman}
+% \newfontfamily{\uctimes}{Times New Roman}[
+%   Mapping=uc-text
+% ]
 
 % Set 1.5 lines
  \usepackage{setspace}
@@ -154,7 +154,7 @@
   }
   \sort{\citeorder}
 }
-\addbibresource{Reference/Reference.bib}
+% \addbibresource{Reference/Reference.bib}
 
 %==================================== Algorithm
 
