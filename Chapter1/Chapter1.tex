@@ -218,7 +218,11 @@ Server chính sẽ nhận dữ liệu từ cả thiết bị thật và ảo đ�
     \end{tabular}
 \end{table}
 
-
+Sau khi dữ liệu được gửi về server thì các chức năng sẽ được xử lý chung:
+\begin{itemize}
+    \item Dữ liệu được gửi về sẽ được gửi lên Thingsboard để hiển thị, đồng thời được lưu trữ vào file csv của từng thiết bị.
+    \item Các file csv sẽ được gửi qua Python server để tiên đoán lượng rác sau một ngày, kết quả sẽ trả về Node server
+\end{itemize}
 
 
 

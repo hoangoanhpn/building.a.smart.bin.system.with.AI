@@ -48,7 +48,7 @@
 
 %====================================  Language format
 \usepackage[utf8]{inputenc}
-% \usepackage[english, vietnamese]{babel} 
+\usepackage[english, vietnamese]{babel} 
 \usepackage{iflang}
 
 %====================================  Modify the cover page
@@ -141,19 +141,19 @@
 
 %==================================== Bibliography
 
-\usepackage[backend=biber,style=numeric-comp,sorting=sample]{biblatex}
-\DeclareSortingScheme{sample}{
-  \sort{
-  \field{title}
-  }
-  \sort{
-  \field{author}
-  }
-  \sort{
-  \field{year}
-  }
-  \sort{\citeorder}
-}
+% \usepackage[backend=biber,style=numeric-comp,sorting=sample]{biblatex}
+% \DeclareSortingScheme{sample}{
+%   \sort{
+%   \field{title}
+%   }
+%   \sort{
+%   \field{author}
+%   }
+%   \sort{
+%   \field{year}
+%   }
+%   \sort{\citeorder}
+% }
 % \addbibresource{Reference/Reference.bib}
 
 %==================================== Algorithm
