@@ -186,7 +186,7 @@ Thách thức lớn nhất là phải đưa được model đã train vào mạc
 Với thiết kế tối giản, thùng rác sẽ vận hành theo các bước như sau: 
 \begin{itemize}
     \item Bước 1: thiết bị sẽ chụp hình vật thể sau khi vật thể đó được để vảo khay đụng rác
-    \item Bước 2: Hình ảnh sẽ được chuyển sang một chuỗi byte sau đó so sánh với model đã train và đưa ra kết quả phân loại. Nếu là nhựa, thủy tinh thì sẽ đem tái chế, còn nếu là giấy, và các loại rác khác thì sẽ không tái chế.
+    \item Bước 2: Hình ảnh sẽ được chuyển sang một chuỗi byte sau đó áp dụng model đã train để đưa ra kết quả phân loại. Nếu là nhựa, thủy tinh thì sẽ đem tái chế, còn nếu là giấy, và các loại rác khác thì sẽ không tái chế.
     \item Bước 3: Rác sẽ rơi vào một trong hai khay đựng rác bên trong theo đúng kết quả đã đưa ra.
 \end{itemize}
 Như vậy, việc phân loại đã trải qua ba bước như trên.
